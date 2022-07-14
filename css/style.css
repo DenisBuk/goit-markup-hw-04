@@ -165,6 +165,12 @@ img{
     color: var(--primary-color);
 }
 
+
+.mail-icon{
+    width: 16px;
+    height: 12px;
+}
+
 /*Button*/
 
 .filter-container{
