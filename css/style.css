@@ -166,11 +166,6 @@ img{
 }
 
 
-.mail-icon{
-    width: 16px;
-    height: 12px;
-}
-
 /*Button*/
 
 .filter-container{
@@ -281,6 +276,22 @@ img{
     line-height: 1.17;
     text-align: center;
 }
+
+.thumb{
+    display: flex;
+    height: 120px;
+    background-color: var(--primary-bg-color);
+    border-radius: 4px;
+    margin-bottom: var(--card-gap);
+    align-items: center;
+    justify-content: center;
+}
+
+.thumb .icon{
+    width: 70px;
+    height: 70px;
+}
+
 
 .studio-title{
     margin-bottom: 10px;
