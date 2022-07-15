@@ -141,6 +141,7 @@ img{
 .auth-link{
     display: flex;
     align-items: center;
+    justify-content: center;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -152,6 +153,8 @@ img{
 .site-nav .link:hover, .site-nav .link:focus {
     color: var(--primary-color);
 }
+
+
 
 /*auth-nav*/
 
@@ -166,6 +169,14 @@ img{
     color: var(--primary-color);
 }
 
+.icon {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+
+  
 
 /*Button*/
 
@@ -295,6 +306,8 @@ img{
     height: 70px;
 }
 
+
+
 .studio-title{
     margin-bottom: 10px;
 
@@ -325,12 +338,44 @@ img{
 }
 
 .team-work{
-    
+    margin-bottom: 16px;
+
     font-weight: 400;
     font-size: 16px;
     line-height:1.19;
     text-align: center;
 }
+
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+
+.social-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+
+    color: var(--border-icon);
+    background-color: var(--white-color);
+    border-radius: 50%;
+
+    outline: 1px solid black;
+}
+
+.social-icon{
+    fill: currentColor;
+}
+
+.social-link:hover,.social-link:focus{
+    color: var(--blue-color);
+}
+
+
 
 /* section portfolio*/
 
