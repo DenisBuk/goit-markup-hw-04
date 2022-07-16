@@ -377,6 +377,7 @@ img{
 
 .instagram {
     background-color: var(--blue-color);
+    --color1:var(--white-color)
 }
 
 .social-icon {
