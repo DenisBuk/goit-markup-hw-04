@@ -161,6 +161,7 @@ img{
 .auth-nav{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 50px;
     margin-left: auto;
 }
@@ -169,15 +170,11 @@ img{
     color: var(--primary-color);
 }
 
-.icon {
-    display:flex;
-    align-items: center;
-    justify-content: center;
+.mail-icon, .tel-icon {
+    display: flex;
     margin-right: 10px;
   }
-
   
-
 /*Button*/
 
 .filter-container{
@@ -299,14 +296,11 @@ img{
     justify-content: center;
 }
 
-.thumb .icon{
-    outline: 2px solid red;
-    display: block;
+ .features-icons{
+    display: flex;
     width: 70px;
     height: 70px;
 }
-
-
 
 .studio-title{
     margin-bottom: 10px;
@@ -369,6 +363,7 @@ img{
 
 .social-icon{
     fill: currentColor;
+
 }
 
 .social-link:hover,.social-link:focus{
@@ -410,7 +405,11 @@ img{
 /*section-clients*/
 
 .clients-list{
-    display: flex;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    --card-gap:30px;
+    --card-item:6;
 }
 
 .clients-item{
@@ -429,15 +428,21 @@ img{
     fill: currentColor;
 }
 
-.clients-list .clients-item:not(:last-child) {
-    margin-right: var(--card-gap);}
 
-.clients-item .link:hover,
-.clients-item .link:focus {
-        color: var(--blue-color);
-        border: 1px solid var(--blue-color);}
 
 /*footer*/
+
+.footer-container{
+    display: flex;
+    gap: 70px;
+}
+
+.address-container{
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    outline: 1px solid red;
+}
 
 .footer{
     padding-top: 60px;
@@ -465,6 +470,21 @@ img{
 
 .web:hover, .web:focus{
     color: var(--white-color);
+}
+
+/** Footer-social **/
+
+.footer-social{
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    outline: 1px solid red;
+
+}
+ 
+.footer-come{
+    color: var(--white-color);
+    margin-bottom: 20px;
 }
 
 /*address*/
