@@ -526,6 +526,9 @@ img{
     fill:currentColor;
 }
 
+.twitter{
+    background-color: var(--blue-color);
+}
 
 /*address*/
 
