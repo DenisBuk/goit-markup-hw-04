@@ -10,6 +10,7 @@
     --border-color:#EEEEEE;
     --border-icon:#AFB1B8;
     --footer-primary-color:rgba(255, 255, 255, 0.6);
+    --footer-bg-icon:rgba(255, 255, 255, 0.1);
     --gradient:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
     --card-gap: 30px;
     --card-item: 4;
@@ -500,6 +501,31 @@ img{
     color: var(--white-color);
     margin-bottom: 20px;
 }
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+
+    --color1: var(--white-color);
+    background-color: var(--footer-bg-icon);
+    border-radius: 50%;
+
+}
+
+.footer-icon{
+    fill:currentColor;
+}
+
 
 /*address*/
 
