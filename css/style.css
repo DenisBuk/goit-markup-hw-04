@@ -60,9 +60,6 @@ img{
     margin-left: auto;
     padding-right: 15px;
     padding-left: 15px;
-
-    outline: 2px solid red;
-
 }
 
 .section {
@@ -178,7 +175,7 @@ img{
 
   .tel-icon:hover, .tel-icon:focus,
   .mail-icon:hover, .mail-icon:focus{
-    --color4:var(--blue-color)
+    --color3:var(--blue-color)
   }
 
 /*Button*/
@@ -201,6 +198,9 @@ img{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .filter-button:hover, .filter-button:focus{
@@ -292,9 +292,24 @@ img{
     text-align: center;
 }
 
+.title-shadow{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 .title-border {
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
+
+.team-shadow:hover{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+    }
 
 .thumb{
     display: flex;
@@ -335,7 +350,6 @@ img{
     padding-bottom: 30px;
     background-color: var(--white-color);
 }
-
 
 .team-name{
     margin-bottom: 10px;
@@ -379,12 +393,7 @@ img{
 .social-link:hover,
 .social-link:focus{
     background-color: var(--blue-color);
-    color: var(--white-color);
-}
-
-.instagram {
-    background-color: var(--blue-color);
-    --color1:var(--white-color)
+    --color4: var(--white-color);
 }
 
 .social-icon {
@@ -404,6 +413,18 @@ img{
     padding:20px 24px;
 
     border: 1px solid var(--border-color);
+    background:var(--white-color);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+
+}
+
+.image-shadow:hover,
+.image-shadow:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-title{
@@ -426,30 +447,23 @@ img{
 /*section-clients*/
 
 .clients-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin-left: auto;
-    margin-right: auto;
-
-    --card-gap: 30px;
     --card-item:6;
 }
-.clients-item{
+.clients-link{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
     height: 92px;
 
     border: 1px solid var(--border-icon);
     border-radius: 4px;
+
+    fill: currentColor;
 }
 
-.clients-icons{
-    width: 106px;
-    height: 60px;
+.clients-link:hover,
+.clients-link:focus{
+    fill: var(--blue-color);
 }
 
 
@@ -458,13 +472,6 @@ img{
 .footer-container{
     display: flex;
     gap: 70px;
-}
-
-.address-container{
-    padding-top: 60px;
-    padding-bottom: 60px;
-
-    outline: 1px solid red;
 }
 
 .footer{
@@ -493,49 +500,6 @@ img{
 
 .web:hover, .web:focus{
     color: var(--white-color);
-}
-
-/** Footer-social **/
-
-.footer-social{
-    padding-top: 60px;
-    padding-bottom: 60px;
-
-    outline: 1px solid red;
-
-}
- 
-.footer-come{
-    color: var(--white-color);
-    margin-bottom: 20px;
-}
-
-.footer-socials {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.footer-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-
-    --color1: var(--white-color);
-    background-color: var(--footer-bg-icon);
-    border-radius: 50%;
-
-}
-
-.footer-icon{
-    fill:currentColor;
-}
-
-.twitter{
-    background-color: var(--blue-color);
 }
 
 /*address*/
@@ -569,3 +533,20 @@ img{
     color: var(--blue-color);
 }
 
+/** Footer-social **/
+
+.footer-come {
+    color: var(--white-color);
+    padding-top: 12px;
+    margin-bottom: 20px;
+}
+
+.footer-social .social-link{
+    background-color: var(--footer-bg-icon);
+    --color1:var(--white-color);
+}
+
+.footer-social .social-link:hover, 
+.social-link:focus{
+    background-color: var(--blue-color);
+}
