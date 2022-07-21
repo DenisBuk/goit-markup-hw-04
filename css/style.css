@@ -451,6 +451,7 @@ img{
 .clients-container{
     --card-item:6;
 }
+
 .clients-link{
     display: flex;
     align-items: center;
@@ -459,14 +460,14 @@ img{
 
     border: 1px solid var(--border-icon);
     border-radius: 4px;
+    color: var(--border-icon);
 }
 
 .clients-icons{
     fill: currentColor;
 }
 
-.clients-link .link:hover
-.clients-link .link:focus{
+.clients-link .link:hover{
     color: var(--blue-color);
 }
 
@@ -540,7 +541,6 @@ img{
 
 .footer-come {
     color: var(--white-color);
-    padding-top: 12px;
     margin-bottom: 20px;
 }
 
