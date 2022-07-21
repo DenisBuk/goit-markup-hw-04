@@ -167,16 +167,18 @@ img{
     color: var(--blue-color);
 }
 
-.mail-icon,
-.tel-icon {
+.mail-icon{
     margin-right: 10px;
     fill: currentColor;
   }
 
-  .tel-icon:hover, .tel-icon:focus,
-  .mail-icon:hover, .mail-icon:focus{
-    --color3:var(--blue-color)
-  }
+.auth-nav .link:hover,
+.auth-nav .link:focus{
+    color: var(--blue-color);
+    --color3:var(--blue-color);
+}
+
+  
 
 /*Button*/
 
@@ -457,15 +459,16 @@ img{
 
     border: 1px solid var(--border-icon);
     border-radius: 4px;
+}
 
+.clients-icons{
     fill: currentColor;
 }
 
-.clients-link:hover,
-.clients-link:focus{
-    fill: var(--blue-color);
+.clients-link .link:hover
+.clients-link .link:focus{
+    color: var(--blue-color);
 }
-
 
 /*footer*/
 
