@@ -456,9 +456,10 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 170px;
     height: 92px;
 
-    border: 1px solid var(--border-icon);
+    border: 1px solid currentColor;
     border-radius: 4px;
     color: var(--border-icon);
 }
@@ -467,8 +468,10 @@ img{
     fill: currentColor;
 }
 
-.clients-link .link:hover{
+.clients-link:hover,
+.clients-link:focus{
     color: var(--blue-color);
+
 }
 
 /*footer*/
