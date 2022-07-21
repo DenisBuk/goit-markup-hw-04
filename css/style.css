@@ -215,7 +215,6 @@ img{
 
 .hero{
     max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
 
@@ -450,7 +449,6 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
     height: 92px;
 
     border: 1px solid currentColor;
@@ -537,6 +535,14 @@ img{
 /** Footer-social **/
 
 .footer-come {
+    font-weight: 700;
+    font-size: 14px;
+    line-height:1.14;
+    text-transform: uppercase;
+
+    align-items: baseline;
+    
+
     color: var(--white-color);
     margin-bottom: 20px;
 }
