@@ -546,10 +546,11 @@ img{
 
 .footer-social .social-link{
     background-color: var(--footer-bg-icon);
-    --color4:var(--white-color);
+    fill: currentColor;
 }
 
 .footer-social .social-link:hover, 
 .social-link:focus{
     background-color: var(--blue-color);
+
 }
