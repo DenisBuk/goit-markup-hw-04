@@ -546,7 +546,7 @@ img{
 
 .footer-social .social-link{
     background-color: var(--footer-bg-icon);
-    --color1:var(--white-color);
+    --color4:var(--white-color);
 }
 
 .footer-social .social-link:hover, 
